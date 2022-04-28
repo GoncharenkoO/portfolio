@@ -1,0 +1,13 @@
+@import '../../sass/main.scss';
+
+.overlay {
+  height: 140px;
+  width: 140px;
+  animation: spin infinite 0.7s linear;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}

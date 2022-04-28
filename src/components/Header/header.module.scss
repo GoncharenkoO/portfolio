@@ -1,0 +1,20 @@
+@import '../../sass/main.scss';
+
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 80px;
+  padding: 0 30px;
+  border-bottom: 1px solid #b8bcb8;
+
+  @include mq(tablet) {
+    padding: 0 80px;
+  }
+}
+
+.headerImg {
+  width: 50px;
+  height: 50px;
+}

@@ -1,0 +1,79 @@
+@import '../../sass//main.scss';
+
+.container {
+  max-width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @include mq(tablet) {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+  @include mq(desktop) {
+    max-width: 1024px;
+    padding: 0 16px;
+  }
+}
+
+.wrapper {
+  flex-direction: column-reverse;
+  text-align: center;
+  margin-bottom: 30px;
+
+  @include mq(tablet) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+}
+
+.sectionLeft,
+.sectionRight {
+  flex: 1 1 0%;
+}
+
+.title {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+
+  @include mq(tablet) {
+    font-size: 45px;
+  }
+}
+
+.text {
+  font-size: 30px;
+  line-height: 1.2;
+  color: rgb(113, 110, 110);
+
+  @include mq(tablet) {
+    font-size: 40px;
+  }
+}
+
+.subTitle {
+  text-align: center;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+
+  @include mq(tablet) {
+    margin-bottom: 40px;
+  }
+}

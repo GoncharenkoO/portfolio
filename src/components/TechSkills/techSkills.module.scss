@@ -1,0 +1,28 @@
+@import '../../sass/main.scss';
+
+.item {
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 10px;
+
+  @include mq(tablet) {
+    padding: 15px;
+  }
+}
+
+.techSkillsImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  height: 40px;
+  width: auto;
+  margin-bottom: 5px;
+}
+
+.techSkillsText {
+  display: block;
+  color: rgb(113, 110, 110);
+  text-align: center;
+}
