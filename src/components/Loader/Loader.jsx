@@ -11,7 +11,7 @@ function LoaderComponent() {
         heigth="100"
         width="100"
         color="#aa73d6"
-        timeout={3000}
+        timeout={1000}
         ariaLabel="grid-loading"
       />
     </div>
