@@ -5,6 +5,10 @@ import Contacts from '../Contacts/Contacts';
 import styles from './home.module.scss';
 
 const Home = () => {
+  const elements = techSkills.map(({ id, icon, label }) => (
+    <TechSkills key={id} label={label} icon={icon} />
+  ));
+
   return (
     <>
       <section className={styles.container}>
@@ -21,11 +25,7 @@ const Home = () => {
         </div>
         <div className={styles.sectionCenter}>
           <h2 className={styles.subTitle}>[ Tech Skills_ ]</h2>
-          <ul className={styles.list}>
-            {techSkills.map(({ id, icon, label }) => (
-              <TechSkills key={id} label={label} icon={icon} />
-            ))}
-          </ul>
+          <ul className={styles.list}>{elements}</ul>
           <div className={styles.sectionCenter}>
             <h2 className={styles.subTitle}>[ Contacts_ ]</h2>
             <Contacts />
