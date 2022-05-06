@@ -26,7 +26,7 @@ function Navigation() {
         </Link>
 
         <LinkResume
-          href="https://goncharenkoo-cv-resume.netlify.app/"
+          href="https://goncharenkoo-cv.netlify.app/"
           target="_blank"
           rel="noreferrer"
           onClick={menuToggle}
